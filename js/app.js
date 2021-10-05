@@ -533,15 +533,19 @@ function showResults() {
 	comment = Math.floor(comment / 25);
 	switch (comment) {
 		case 0:
-			("You are the king");
+			$("#commentLine").html("Ohh No!! I don't like these type of scores.");
 			break;
 
 		case 1:
-			("You are just 1 step away to become a king");
+			$("#commentLine").html("This is really bad. Think before you answer.");
 			break;
 
 		case 2:
-			("King in the making!! Let's put in more efforts & relearn. ");
+			$("#commentLine").html("Negative! I never expected this from you.");
+			break;
+
+		case 3:
+			$("#commentLine").html("Uff, Really bad score but not a big deal you can score more.");
 			break;
 	}
 }
@@ -560,7 +564,7 @@ function setStatsPercentage() {
 			color: '#f1c40f'
 		},
 		animation: {
-			duration: 1000
+			duration: 2000
 		},
 		emptyFill: 'rgba(0, 0, 0, 0.3)',
 		thickness: '20',
