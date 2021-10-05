@@ -533,11 +533,15 @@ function showResults() {
 	comment = Math.floor(comment / 25);
 	switch (comment) {
 		case 0:
-			("Thank you for you valuable time");
+			("You are the king");
 			break;
 
 		case 1:
-			("Congratulations!!!");
+			("You are just 1 step away to become a king");
+			break;
+
+		case 2:
+			("King in the making!! Let's put in more efforts & relearn. ");
 			break;
 	}
 }
