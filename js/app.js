@@ -113,10 +113,10 @@ function quizInit() {
 }
 
 function updateQuestions() {
-	$("#qNo, #question, #option1, #option2, #option3, #option4").html("");
-	$("#qNo").html(5 - sQuestions.size());
+	$("#qNo, #question, #option1, #option2, #option3").html("");
+	$("#qNo").html(3 - sQuestions.size());
 	$("#question").html(cQuestion.question);
-	for (var i = 1; i < 5; i++) {
+	for (var i = 1; i < 4; i++) {
 		$(".options > li:eq(" + (i - 1) + ")").css('display', 'none')
 		if (cQuestion['option' + i]) {
 			$("#option" + i).html(cQuestion['option' + i])
@@ -310,9 +310,9 @@ function setScore(option) {
 				$("#three").addClass("wrong");
 				break;
 
-			case 4:
-				$("#four").addClass("wrong");
-				break;
+			// case 4:
+			// 	$("#four").addClass("wrong");
+			// 	break;
 		}
 		// score = score - 5;
 		// $("#score").html(score);
