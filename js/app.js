@@ -525,28 +525,40 @@ function showResults() {
 	setPercentage(percent);
 	$("#percent").html(percent + "%");
 	$("#userScore").html(score);
+
 	if (score >= 60) {
 		document.getElementById('congratulation').style.display = 'block'
+		document.getElementById("commentLine").innerHTML = "You are the king";
+
+	} if (score == 40) {
+		document.getElementById("commentLine").innerHTML = "You are just 1 step away to become a king";
+		
+	} if (score == 20) {
+		document.getElementById("commentLine").innerHTML = "King in the making!! Let's put in more efforts & relearn";
 	}
 	var comment;
 	comment = score + 75;
 	comment = Math.floor(comment / 25);
 	switch (comment) {
-		case 0:
-			$("#commentLine").html("Ohh No!! I don't like these type of scores.");
-			break;
+		// case 0:
+		// 	$("#commentLine").html("Ohh No!! I don't like these type of scores.");
+		// 	break;
 
-		case 1:
-			$("#commentLine").html("This is really bad. Think before you answer.");
-			break;
+		// case 1:
+		// 	$("#commentLine").html("This is really bad. Think before you answer.");
+		// 	break;
 
-		case 2:
-			$("#commentLine").html("Negative! I never expected this from you.");
-			break;
+		// case 2:
+		// 	$("#commentLine").html("Negative! I never expected this from you.");
+		// 	break;
 
-		case 3:
-			$("#commentLine").html("Uff, Really bad score but not a big deal you can score more.");
-			break;
+		// case 3:
+		// 	$("#commentLine").html("Uff, Really bad score but not a big deal you can score more.");
+		// 	break;
+
+		// case 4:
+		// 	$("#commentLine").html("You are just Door");
+		// 	break;
 	}
 }
 
