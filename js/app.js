@@ -106,7 +106,7 @@ function randomGen(m) {
 
 function quizInit() {
 	var s, j;
-	for (s = 0; s < 3; s++) {
+	for (s = 0; s < 6; s++) {
 		j = randomGen(data[i].length);
 		sQuestions.enqueue(data[i][j]);
 	}
@@ -114,9 +114,9 @@ function quizInit() {
 
 function updateQuestions() {
 	$("#qNo, #question, #option1, #option2, #option3").html("");
-	$("#qNo").html(3 - sQuestions.size());
+	$("#qNo").html(6 - sQuestions.size());
 	$("#question").html(cQuestion.question);
-	for (var i = 1; i < 4; i++) {
+	for (var i = 1; i < 6; i++) {
 		$(".options > li:eq(" + (i - 1) + ")").css('display', 'none')
 		if (cQuestion['option' + i]) {
 			$("#option" + i).html(cQuestion['option' + i])
@@ -197,7 +197,7 @@ function startTimer() {
 			disableOnClick();
 			showCorrectOption();
 		}
-	}, 1500);
+	}, 2000);
 }
 
 function nextQuestion() {
@@ -526,14 +526,14 @@ function showResults() {
 	$("#percent").html(percent + "%");
 	$("#userScore").html(score);
 
-	if (score >= 60) {
+	if (score >= 120) {
 		document.getElementById('congratulation').style.display = 'block'
 		document.getElementById("commentLine").innerHTML = "You are the king";
 
-	} if (score == 40) {
+	} if (score >= 80) {
 		document.getElementById("commentLine").innerHTML = "You are just 1 step away to become a king";
 		
-	} if (score == 20) {
+	} if (score <= 60) {
 		document.getElementById("commentLine").innerHTML = "King in the making!! Let's put in more efforts & relearn";
 	}
 	var comment;

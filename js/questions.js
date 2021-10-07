@@ -23,21 +23,27 @@ var data =
 				option3: "Reduces PVR via inhibition of L-/N-type calcium channel in the arteries.",
 				answer: 2
 			},
-			// {
-			// 	question: "What are three potential causes of a productive cough?",
-			// 	option1: "Bronchitis",
-			// 	option2: "Bacterial infection",
-			// 	option3: "Anaerobic bacterial infection",
-			// 	option4: "All of the above",
-			// 	answer: 4
-			// },
-			// {
-			// 	question: "Dry, centrally painful, non-productive cough points to which of the following condition",
-			// 	option1: "Pneumonia",
-			// 	option2: "tracheitis",
-			// 	option3: "both A and B",
-			// 	option4: "None of the above",
-			// 	answer: 3
-			// }
+			{
+				question: "Cetanil-TM Indication",
+				option1: "Superior 24 - hour blood pressure control",
+				option2: "One tablet, once in a day",
+				option3: "Treatment of patients with uncontrolled hypertension.",
+				answer: 3
+			},
+			{
+				question: "Cetanil-TM Dosage",
+				option1: "Treatment of patients with uncontrolled hypertension",
+				option2: "One tablet, once in a day",
+				option3: "Superior 24 - hour blood pressure control",
+				answer: 2
+			},
+			{
+				question: "CETANIL TM  Advantage",
+				option1: "One tablet, once in a day.",
+				option2: "Superior 24 - hour blood pressure control.",
+				option3: "Treatment of patients with uncontrolled hypertension.",
+				answer: 2
+			}
+
 		]
 	];
