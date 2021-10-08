@@ -530,10 +530,10 @@ function showResults() {
 		document.getElementById('congratulation').style.display = 'block'
 		document.getElementById("commentLine").innerHTML = "You are the king";
 
-	} if (score >= 80) {
+	} else if (score >= 80) {
 		document.getElementById("commentLine").innerHTML = "You are just 1 step away to become a king";
-		
-	} if (score <= 60) {
+
+	} else if (score <= 60) {
 		document.getElementById("commentLine").innerHTML = "King in the making!! Let's put in more efforts & relearn";
 	}
 	var comment;
