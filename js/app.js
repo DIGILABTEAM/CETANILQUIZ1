@@ -526,12 +526,12 @@ function showResults() {
 	$("#percent").html(percent + "%");
 	$("#userScore").html(score);
 
-	if (score = 120) {
+	if (score == 120) {
 		document.getElementById('congratulation').style.display = 'block'
-		document.getElementById("commentLine").innerHTML = "You are the king";
+		document.getElementById("commentLine").innerHTML = "You are the king to Checkmate Hypertension";
 
 	} else if (score >= 80) {
-		document.getElementById("commentLine").innerHTML = "You are just 1 step away to become a king";
+		document.getElementById("commentLine").innerHTML = "You are just 1 step away to become a king- Checkmate Hypertension";
 
 	} else if (score <= 60) {
 		document.getElementById("commentLine").innerHTML = "King in the making!! Let's put in more efforts & relearn";
