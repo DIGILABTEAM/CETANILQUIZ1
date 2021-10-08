@@ -526,7 +526,7 @@ function showResults() {
 	$("#percent").html(percent + "%");
 	$("#userScore").html(score);
 
-	if (score >= 120) {
+	if (score = 120) {
 		document.getElementById('congratulation').style.display = 'block'
 		document.getElementById("commentLine").innerHTML = "You are the king";
 
