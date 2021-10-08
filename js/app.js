@@ -277,19 +277,19 @@ function setScore(option) {
 		document.getElementById("correctSound").play();
 		switch (cQuestion.answer) {
 			case 1:
-				$("#one").addClass("correct");
+				$("#one").addClass("correctO");
 				break;
 
 			case 2:
-				$("#two").addClass("correct");
+				$("#two").addClass("correctO");
 				break;
 
 			case 3:
-				$("#three").addClass("correct");
+				$("#three").addClass("correctO");
 				break;
 
 			case 4:
-				$("#four").addClass("correct");
+				$("#four").addClass("correctO");
 				break;
 		}
 		score = score + 20;
